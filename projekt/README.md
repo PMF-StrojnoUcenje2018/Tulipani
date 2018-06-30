@@ -12,7 +12,7 @@ Svi parametri nalaze se u utils/config.py datoteci.
 
 * U direktoriju results/species se sprema model (build_model_species.pkl) koji se ponovno učitava u test_model.py za daljnje predikcije. U istom direktoriju sprema se tekstualna datoteka koja bilježi mjere evaluacije i matricu konfuzije za svaku epohu. Također, nalazi se logs direktorij u kojeg se tijekom treniranja modela bilježe rezultati svake epohe (Tensorboard logiranje, https://jhui.github.io/2017/03/12/TensorBoard-visualize-your-learning/). Po završetku treniranja modela, unutar direktorija results/species u terminalu upisati 'tensorboard --logdir='./logs' --port=6006', pa se u web browseru lokalno na portu 6006 mogu vidjeti logirane vrijednosti.
 
-### Klasifikator za 37 pasmina
+### CNNModel - Klasifikator za 37 pasmina
 * Iz baznog direktorija pokrenuti scripts/breeds/data_preprocessing.py - učitavanje i preprocesiranje slika
 * Iz baznog direktorija pokrenuti scripts/breeds/build_model.py - treniranje modela i testiranje. Nakon ovog koraka u direktoriju pics/breeds/testPics nalaze se predikcije modela za sve testne podatke
 * Za testiranje modela pokrenuti scripts/breeds/test_model.py - program iz direktorija testneSlike učitava sve i vrši predikciju na njima (nije prazan jer makar jedna slika mora biti za ispravno izvršavanje). Rezultat je spremljen u pics/breeds/newPics.
